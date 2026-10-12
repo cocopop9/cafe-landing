@@ -77,6 +77,22 @@ section h2 { font-size: 2rem; margin-bottom: 1.5rem; }
 
 .visit p { margin-bottom: 0.4rem; }
 
+.nav { transition: box-shadow 0.3s; }
+.nav.scrolled { box-shadow: 0 2px 12px rgba(74, 47, 34, 0.12); }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s, transform 0.6s; }
+.reveal.visible { opacity: 1; transform: none; }
+
+.open-status {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 1rem !important;
+}
+.open-status.open { background: #e3f1e0; color: #2e6b2a; }
+.open-status.closed { background: #f3e2dc; color: #8a3b22; }
+
 footer { text-align: center; padding: 2rem; background: var(--brown); color: var(--cream); }
 
 @media (max-width: 600px) {
